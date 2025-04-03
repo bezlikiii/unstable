@@ -75,7 +75,7 @@ a {
     align-items: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .header1 {
         flex-direction: column;
         height: auto;
