@@ -16,28 +16,32 @@ a {
 
 .header1 {
     background-color: rgb(255, 255, 255);
-    height: 120px;
+    height: 86px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  /* Добавлено для правильного выравнивания логотипа и меню */
     padding: 0 20px;
+    width: 100%;
 }
 
 .logo {
     font-size: 30px;
     color: black;
     width: auto;
-    max-width: 200px; /* Ограничим ширину логотипа */
+    max-width: 200px;
+    position: absolute;
+    top: 4px;
 }
 
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 48px;
     padding: 10px 20px;
     background-color: white;
     border-radius: 30px;
     border: 2px solid rgb(0, 0, 0);
-    transform: translate(-20%, 0);
+    width: 500px;
+    justify-content: space-around; /* Добавлено для правильного распределения элементов */
 }
 
 .nav-list li {
@@ -49,12 +53,12 @@ a {
     font-weight: bold;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .header1 {
-        flex-direction: column;
+        flex-direction: column;  /* Меняем расположение элементов на мобильных */
         height: auto;
         padding: 10px;
+        align-items: center;  /* Центрируем элементы */
     }
 
     .logo {
@@ -63,8 +67,32 @@ a {
     }
 
     .nav-list {
-        flex-direction: column;
+        flex-direction: column;  /* Меню будет располагаться вертикально */
         width: 100%;
         text-align: center;
     }
+
+    .nav-list li {
+        padding: 5px 0; /* Уменьшаем отступы для вертикального меню */
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.content {
+    display: flex;
+    gap: 2%;
+}
+
+.box {
+    height: 250px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    justify-content: space-between;
 }
