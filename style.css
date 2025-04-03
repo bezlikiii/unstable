@@ -102,12 +102,12 @@ a {
         margin-top: 60px;
         width: 120%;
         text-align: center;
-        gap: 0px;
+        gap: 10px;
         justify-content: center;
         left: 50%;
         position: relative;
         transform: translate(-50%, 0);
-        padding: 10px 10px 10px 10px;
+        padding: 10px 0;
     }
 
     .container {
@@ -136,4 +136,5 @@ a {
         justify-content: space-around;
         padding: 0 5px;
     }
+    
 }
