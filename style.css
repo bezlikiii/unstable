@@ -99,8 +99,10 @@ a {
 
     .nav-list {
         margin-top: 60px;
-        width: 400px;
+        width: 370px;
         text-align: center;
+        padding-left: 8%;
+        gap: 24px;
     }
 
     .container {
