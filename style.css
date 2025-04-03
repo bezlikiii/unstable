@@ -94,7 +94,7 @@ a {
     }
 
     .nav-list {
-        flex-direction: column;
+        margin-top: 60px;
         width: 100%;
         text-align: center;
     }
