@@ -102,7 +102,7 @@ a {
         margin-top: 60px;
         width: 120%;
         text-align: center;
-        gap: 24px;
+        gap: 0px;
         justify-content: center;
         left: 50%;
         position: relative;
@@ -134,7 +134,6 @@ a {
     .nav-list li {
         list-style: none;
         justify-content: space-around;
-        padding: 0 10px;
+        padding: 0 5px;
     }
-    
 }
