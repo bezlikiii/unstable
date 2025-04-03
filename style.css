@@ -19,7 +19,7 @@ a {
     height: 86px;
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* Добавлено для правильного выравнивания логотипа и меню */
+    justify-content: center;
     padding: 0 20px;
     width: 100%;
 }
@@ -41,11 +41,11 @@ a {
     border-radius: 30px;
     border: 2px solid rgb(0, 0, 0);
     width: 500px;
-    justify-content: space-around; /* Добавлено для правильного распределения элементов */
 }
 
 .nav-list li {
     list-style: none;
+    justify-content: space-around;
 }
 
 .nav-list a {
@@ -53,12 +53,12 @@ a {
     font-weight: bold;
 }
 
+
 @media (max-width: 1000px) {
     .header1 {
-        flex-direction: column;  /* Меняем расположение элементов на мобильных */
+        flex-direction: column;
         height: auto;
         padding: 10px;
-        align-items: center;  /* Центрируем элементы */
     }
 
     .logo {
@@ -67,13 +67,9 @@ a {
     }
 
     .nav-list {
-        flex-direction: column;  /* Меню будет располагаться вертикально */
+        flex-direction: column;
         width: 100%;
         text-align: center;
-    }
-
-    .nav-list li {
-        padding: 5px 0; /* Уменьшаем отступы для вертикального меню */
     }
 }
 
@@ -81,13 +77,12 @@ a {
     display: flex;
     justify-content: space-around;
     margin: 5%;
-}
 
+}
 .content {
     display: flex;
     gap: 2%;
 }
-
 .box {
     height: 250px;
     width: 200px;
