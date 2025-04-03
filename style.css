@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(241, 238, 238);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.header1 {
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+    color: black;
+    width: auto;
+    max-width: 200px; /* Ограничим ширину логотипа */
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    transform: translate(-20%, 0);
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
