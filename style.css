@@ -5,7 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #f1eeee;
 }
 
@@ -21,10 +24,13 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    position: relative;
 }
 
 .logo {
     max-width: 200px;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-list {
@@ -33,12 +39,11 @@ a {
     padding: 10px 20px;
     background-color: white;
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid rgb(1, 172, 242);
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 5;
 }
 
 .nav-list li {
@@ -48,12 +53,14 @@ a {
 .nav-list a {
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .container {
+    flex: 1;
     display: flex;
     justify-content: center;
-    margin: 5%;
+    padding: 5%;
 }
 
 .content {
@@ -61,7 +68,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 90%;
-    border: 2px solid black;
+    max-width: 1200px;
     border-radius: 10px;
     padding: 20px;
     background: white;
@@ -70,7 +77,7 @@ a {
 .box {
     height: 400px;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(1, 172, 242);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -80,10 +87,12 @@ a {
 .footer-content {
     height: 200px;
     background-color: black;
-    border-top: 2px solid #00c3ff;
+    border-top: 2px solid rgb(1, 172, 242);
     color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
 }
 
 .socials {
@@ -91,7 +100,6 @@ a {
     gap: 20px;
     font-size: 15px;
     flex-direction: column;
-    margin: 30px 0px 0px 30px;
     flex-wrap: wrap;
 }
 
@@ -99,7 +107,15 @@ a {
     color: white;
 }
 
-/* Адаптивность */
+.nav-list a:hover {
+    color: #00c3ff;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -131,6 +147,6 @@ a {
 
     .box {
         width: 70%;
-        height: 15%;
+        height: 400px;
     }
 }
